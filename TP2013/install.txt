@@ -1,0 +1,10 @@
+sudo apt-get install openmpi-bin openmpi-common openssh-client openssh-server libopenmpi1.6 libopenmpi-dev libopenmpi1.6-dbg
+
+sudo emacs /usr/share/openmpi/mpicc-wrapper-data.txt and then remove the following comment lines:
+# There can be multiple blocks of configuration data, chosen by
+# compiler flags (using the compiler_args key to chose which block
+# should be activated.  This can be useful for multilib builds.  See the
+# multilib page at:
+#    https://svn.open-mpi.org/trac/ompi/wiki/compilerwrapper3264 
+# for more information.
+
